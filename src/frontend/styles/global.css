@@ -1,5 +1,54 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url("../assets/BebasNeue.ttf");
+}
+
+:root {
+  --verde: #5ca129;
+  --turquesa: #008e99;
+  --rojo: #e1241f;
+  --fontPrimary: BebasNeue;
+  --fontSecondary: "Roboto", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontPrimary);
+}
+
+p,
+button {
+  font-family: var(--fontSecondary);
+}
+
+.btn-main {
+  width: 130px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--turquesa);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: var(--verde);
+}
+
+.text-align {
+  text-align: center;
+}
+
+.btn-center {
+  margin: 0 auto;
 }

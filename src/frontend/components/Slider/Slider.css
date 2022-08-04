@@ -1,0 +1,20 @@
+.cont-section-slider {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.item img {
+  width: 150px !important;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem auto;
+}

@@ -1,0 +1,25 @@
+.cont-main-banner {
+  position: relative;
+}
+
+.cont-img-banner {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url("../../assets/img/img-banners/circo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0.8);
+}
+
+.cont-main-banner img {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

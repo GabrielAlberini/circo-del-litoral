@@ -1,0 +1,5 @@
+.header {
+  font-family: var(--fontPrimary);
+  font-size: 1.3rem;
+  background-color: var(--turquesa);
+}

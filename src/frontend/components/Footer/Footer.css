@@ -1,0 +1,26 @@
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--turquesa);
+  color: black;
+}
+
+footer img {
+  width: 150px;
+  margin: 2rem auto;
+}
+
+footer h5 {
+  margin: 2rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--verde);
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--verde);
+}

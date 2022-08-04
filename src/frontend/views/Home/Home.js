@@ -17,7 +17,6 @@ const Home = () => {
       <Banner />
       {SECTION_HOME.map((section) => {
         const { invSection, description, title, redirection, img } = section;
-
         return (
           <section key={title} className={`main-section-home ${invSection}`}>
             <article className="cont-data-section-home">

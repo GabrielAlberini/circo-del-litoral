@@ -6,10 +6,7 @@ import imgHome1 from "../../assets/img/img-home/circo1.jpg";
 import imgHome2 from "../../assets/img/img-home/circo2.jpg";
 import imgHome3 from "../../assets/img/img-home/circo3.jpg";
 import imgHome4 from "../../assets/img/img-home/circo4.jpg";
-import {
-  SECTION_HOME,
-  GALERY_CONTACT_HOME,
-} from "../../../backend/services/services";
+import { SECTION_HOME, GALERY_CONTACT_HOME } from "../../../services";
 
 const Home = () => {
   return (

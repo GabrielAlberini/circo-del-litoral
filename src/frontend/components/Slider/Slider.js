@@ -2,7 +2,7 @@ import "./Slider.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
-import { ITEMS_USERS } from "../../../backend/services/services";
+import { ITEMS_USERS } from "../../../services";
 
 const Slider = () => {
   const options = {

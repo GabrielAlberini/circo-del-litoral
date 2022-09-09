@@ -36,6 +36,7 @@ const Home = () => {
               className="cont-data-section-home text-align"
               style={{
                 backgroundImage: `url(${img})`,
+                backgroundAttachment: "fixed",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",

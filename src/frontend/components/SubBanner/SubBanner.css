@@ -1,0 +1,23 @@
+.cont-main-subbanner {
+  position: relative;
+}
+
+.cont-img-subbanner {
+  min-height: 50vh;
+  display: grid;
+  place-content: center;
+}
+
+.cont-main-subbanner h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--verde);
+}

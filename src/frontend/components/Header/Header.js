@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
   return (
@@ -19,40 +20,48 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="link-nav" href="#home">
-              Inicio
-            </Nav.Link>
-            <Nav.Link className="link-nav" href="#link">
-              Quiénes somos
-            </Nav.Link>
+            <LinkContainer to="/">
+              <Nav.Link className="link-nav">Inicio</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/quienes-somos">
+              <Nav.Link className="link-nav">Quiénes somos</Nav.Link>
+            </LinkContainer>
             <NavDropdown title="Eventos" id="basic-nav-dropdown">
-              <NavDropdown.Item className="link-nav" href="#action/3.1">
-                Animaciones
-              </NavDropdown.Item>
-              <NavDropdown.Item className="link-nav" href="#action/3.2">
-                Intervenciones
-              </NavDropdown.Item>
-              <NavDropdown.Item className="link-nav" href="#action/3.3">
-                Shows
-              </NavDropdown.Item>
+              <LinkContainer to="/animaciones">
+                <NavDropdown.Item className="link-nav">
+                  Animaciones
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/intervenciones">
+                <NavDropdown.Item className="link-nav">
+                  Intervenciones
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/shows">
+                <NavDropdown.Item className="link-nav">Shows</NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
             <NavDropdown title="Producciones" id="basic-nav-dropdown">
-              <NavDropdown.Item className="link-nav" href="#action/3.1">
-                Festivales
-              </NavDropdown.Item>
-              <NavDropdown.Item className="link-nav" href="#action/3.2">
-                Formación
-              </NavDropdown.Item>
+              <LinkContainer to="/festivales">
+                <NavDropdown.Item className="link-nav">
+                  Festivales
+                </NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/formacion">
+                <NavDropdown.Item className="link-nav">
+                  Formación
+                </NavDropdown.Item>
+              </LinkContainer>
             </NavDropdown>
-            <Nav.Link className="link-nav" href="#link">
-              Novedades
-            </Nav.Link>
-            <Nav.Link className="link-nav" href="#link">
-              Galeria
-            </Nav.Link>
-            <Nav.Link className="link-nav" href="#link">
-              Contacto
-            </Nav.Link>
+            <LinkContainer to="/novedades">
+              <Nav.Link className="link-nav">Novedades</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/galeria">
+              <Nav.Link className="link-nav">Galeria</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contacto">
+              <Nav.Link className="link-nav">Contacto</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>

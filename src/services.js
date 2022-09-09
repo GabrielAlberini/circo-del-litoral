@@ -2,7 +2,6 @@ import imgHome1 from "./frontend/assets/img/img-home/circo1.jpg";
 import imgHome2 from "./frontend/assets/img/img-home/circo2.jpg";
 import imgHome3 from "./frontend/assets/img/img-home/circo3.jpg";
 import imgHome4 from "./frontend/assets/img/img-home/circo4.jpg";
-import imgHome5 from "./frontend/assets/img/img-home/circo5.jpg";
 import imgHome6 from "./frontend/assets/img/img-home/circo6.jpg";
 
 const SECTION_HOME = [
@@ -87,4 +86,35 @@ const ITEMS_USERS = [
   },
 ];
 
-export { SECTION_HOME, GALERY_CONTACT_HOME, ITEMS_USERS };
+const SUBBANNER_IMG = [{ galeriaFoto: imgHome1 }];
+
+const ITEMS_GALERY = [
+  {
+    img: imgHome1,
+    alt: "foto de circo",
+  },
+  {
+    img: imgHome2,
+    alt: "foto de circo",
+  },
+  {
+    img: imgHome3,
+    alt: "foto de circo",
+  },
+  {
+    img: imgHome4,
+    alt: "foto de circo",
+  },
+  {
+    img: imgHome6,
+    alt: "foto de circo",
+  },
+];
+
+export {
+  SECTION_HOME,
+  GALERY_CONTACT_HOME,
+  ITEMS_USERS,
+  SUBBANNER_IMG,
+  ITEMS_GALERY,
+};

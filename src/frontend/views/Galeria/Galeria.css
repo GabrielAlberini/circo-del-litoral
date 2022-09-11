@@ -4,6 +4,7 @@
 }
 
 .container-galeria div {
+  min-height: 400px;
   height: 50%;
   height: 300px;
   transition: all 0.2s;
@@ -13,4 +14,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 880px) {
+  .container-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container-galeria {
+    grid-template-columns: 1fr;
+  }
 }

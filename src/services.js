@@ -90,22 +90,27 @@ const SUBBANNER_IMG = [{ galeriaFoto: imgHome1 }];
 
 const ITEMS_GALERY = [
   {
+    id: 1,
     img: imgHome1,
     alt: "foto de circo",
   },
   {
+    id: 2,
     img: imgHome2,
     alt: "foto de circo",
   },
   {
+    id: 3,
     img: imgHome3,
     alt: "foto de circo",
   },
   {
+    id: 4,
     img: imgHome4,
     alt: "foto de circo",
   },
   {
+    id: 5,
     img: imgHome6,
     alt: "foto de circo",
   },

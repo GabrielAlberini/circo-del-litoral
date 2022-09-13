@@ -3,3 +3,11 @@
   font-size: 1.3rem;
   background-color: var(--turquesa);
 }
+
+.link-nav.active.dropdown-item:active {
+  background-color: var(--verde) !important;
+}
+
+.link-nav.active.dropdown-item {
+  background-color: var(--verde);
+}

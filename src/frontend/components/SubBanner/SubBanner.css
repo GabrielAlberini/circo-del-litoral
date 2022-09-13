@@ -21,3 +21,15 @@
   font-size: 5rem;
   color: var(--verde);
 }
+
+@media (max-width: 480px) {
+  .cont-img-subbanner {
+    min-height: 30vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .cont-main-subbanner h2 {
+    font-size: 4em;
+  }
+}

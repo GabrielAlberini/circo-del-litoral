@@ -1,51 +1,52 @@
 import "./Contacto.css";
 import { Layout } from "../../components/Layout/Layout";
-import { Banner } from "../../components/Banner/Banner";
+import { SubBanner } from "../../components/SubBanner/SubBanner";
+import { SUBBANNER_IMG } from "../../../services";
+import {
+  IconInstagram,
+  WhatsappIcon,
+  FacebookIcon,
+  MailIcon,
+} from "../../components/Icons/Icons";
 
 const Contacto = () => {
   return (
     <Layout>
-      <Banner />
-      <p>Contacto</p>
-      <form
-        action="https://formsubmit.co/gabialberini733@gmail.com"
-        method="POST"
-      >
-        <div class="mb-3">
-          <label class="form-label">Full Name</label>
-          <input name="name" type="text" class="form-control" required />
-        </div>
+      <SubBanner nameSection="Contacto" img={SUBBANNER_IMG[0].galeriaFoto} />
+      <section className="container-contact">
+        <h2>Puedes encontrarnos en nuestras redes sociales</h2>
+        <article>
+          <a
+            href="https://www.instagram.com/circo.del.litoral/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <IconInstagram />
+          </a>
+          <a
+            href="https://wa.me/+5493541534520?text=Hola me gustaría comunicarme con Circo del Litoral."
+            target="_blank"
+            rel="noreferrer"
+          >
+            <WhatsappIcon />
+          </a>
+          <a
+            href="https://www.facebook.com/circo.del.litoral"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FacebookIcon />
+          </a>
 
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
-          <input name="email" type="email" class="form-control" required />
-          <div id="emailHelp" class="form-text">
-            Don't worry, we won't share it with anyone else.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Phone (optional)</label>
-          <input name="phone" class="form-control" />
-          <div id="phoneHelp" class="form-text">
-            If you rather talk to a human directly.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Your Message</label>
-          <textarea
-            name="message"
-            class="form-control"
-            rows="3"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
-      </form>
+          <a
+            href="mailto:repiqueterea@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MailIcon />
+          </a>
+        </article>
+      </section>
     </Layout>
   );
 };

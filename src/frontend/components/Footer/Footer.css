@@ -1,4 +1,8 @@
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
   text-align: center;
   padding: 2rem;
   background-color: var(--turquesa);
@@ -23,4 +27,17 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: var(--verde);
+}
+
+@media (max-width: 880px) {
+  footer {
+    gap: 3em;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    gap: 2em;
+  }
 }

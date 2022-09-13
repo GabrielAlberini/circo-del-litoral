@@ -9,7 +9,9 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <img src="./logo.png" alt="logo de circo del litoral" />
+      <div>
+        <img src="./logo.png" alt="logo de circo del litoral" />
+      </div>
       <div>
         <IconInstagram />
         <WhatsappIcon />

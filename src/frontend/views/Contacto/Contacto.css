@@ -1,0 +1,39 @@
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container-contact article {
+  padding: 2em;
+  text-align: center;
+}
+
+.container-contact article svg {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin: 2rem;
+  border-radius: 10px;
+  fill: white;
+  background-color: black;
+}
+
+.container-contact article svg:hover {
+  background-color: var(--verde);
+}
+
+@media (max-width: 480px) {
+  .container-contact article {
+    display: flex;
+    justify-content: center;
+  }
+  .container-contact article svg {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+}

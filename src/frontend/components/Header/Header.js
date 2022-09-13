@@ -9,14 +9,16 @@ const Header = () => {
   return (
     <Navbar className="header" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src="/logo.png"
-            width="150"
-            className="d-inline-block align-top"
-            alt="Logo Circo del Litoral"
-          />
-        </Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>
+            <img
+              src="/logo.png"
+              width="150"
+              className="d-inline-block align-top"
+              alt="Logo Circo del Litoral"
+            />
+          </Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav className="ml-auto">
@@ -53,9 +55,6 @@ const Header = () => {
                 </NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
-            <LinkContainer to="/novedades">
-              <Nav.Link className="link-nav">Novedades</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/galeria">
               <Nav.Link className="link-nav">Galeria</Nav.Link>
             </LinkContainer>

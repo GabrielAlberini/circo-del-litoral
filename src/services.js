@@ -3,6 +3,8 @@ import imgHome2 from "./frontend/assets/img/img-home/circo2.jpg";
 import imgHome3 from "./frontend/assets/img/img-home/circo3.jpg";
 import imgHome4 from "./frontend/assets/img/img-home/circo4.jpg";
 import imgHome6 from "./frontend/assets/img/img-home/circo6.jpg";
+// Users
+import user from "./frontend/assets/img/users/user.png";
 
 const SECTION_HOME = [
   {
@@ -55,6 +57,7 @@ const ITEMS_USERS = [
       "llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala ",
     name: "Pepito",
     rol: "Malabarista",
+    socialLink: "https://google.com",
   },
   {
     img: imgHome1,
@@ -62,6 +65,7 @@ const ITEMS_USERS = [
       "llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala ",
     name: "Gabriel Alberini",
     rol: "Malabarista",
+    socialLink: "",
   },
   {
     img: imgHome1,
@@ -69,6 +73,7 @@ const ITEMS_USERS = [
       "llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala ",
     name: "Juancito",
     rol: "Malabarista",
+    socialLink: "",
   },
   {
     img: imgHome1,
@@ -76,6 +81,7 @@ const ITEMS_USERS = [
       "llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala ",
     name: "Martincito",
     rol: "Malabarista",
+    socialLink: "",
   },
   {
     img: imgHome1,
@@ -83,10 +89,56 @@ const ITEMS_USERS = [
       "llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala llalalala ",
     name: "Marianita",
     rol: "Malabarista",
+    socialLink: "",
   },
 ];
 
-const SUBBANNER_IMG = [{ galeriaFoto: imgHome1 }];
+const SUBBANNER_IMG = [
+  { galeriaFoto: imgHome1 },
+  { galeriaFoto: imgHome2 },
+  { galeriaFoto: imgHome3 },
+  { galeriaFoto: imgHome4 },
+  { galeriaFoto: imgHome6 },
+];
+
+const USERS = [
+  {
+    id: "1",
+    img: user,
+    name: "Nombre de usuario",
+    rol: "Malabarista",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta ipsa eum sunt ex cumque praesentium, tempore deleniti modi sit sequi molestiae laudantium labore ducimus nesciunt rerum quis debitis? Beatae.",
+    socialLink: "https:/google.com",
+  },
+  {
+    id: "2",
+    img: user,
+    name: "Nombre de usuario",
+    rol: "Malabarista",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta ipsa eum sunt ex cumque praesentium, tempore deleniti modi sit sequi molestiae laudantium labore ducimus nesciunt rerum quis debitis? Beatae.",
+    socialLink: "https:/google.com",
+  },
+  {
+    id: "3",
+    img: user,
+    name: "Nombre de usuario",
+    rol: "Malabarista",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta ipsa eum sunt ex cumque praesentium, tempore deleniti modi sit sequi molestiae laudantium labore ducimus nesciunt rerum quis debitis? Beatae.",
+    socialLink: "https:/google.com",
+  },
+  {
+    id: "4",
+    img: user,
+    name: "Nombre de usuario",
+    rol: "Malabarista",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta ipsa eum sunt ex cumque praesentium, tempore deleniti modi sit sequi molestiae laudantium labore ducimus nesciunt rerum quis debitis? Beatae.",
+    socialLink: "https:/google.com",
+  },
+];
 
 const ITEMS_GALERY = [
   {
@@ -122,4 +174,5 @@ export {
   ITEMS_USERS,
   SUBBANNER_IMG,
   ITEMS_GALERY,
+  USERS,
 };

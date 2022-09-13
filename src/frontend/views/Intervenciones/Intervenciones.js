@@ -1,12 +1,15 @@
 import "./Intervenciones.css";
 import { Layout } from "../../components/Layout/Layout";
-import { Banner } from "../../components/Banner/Banner";
+import { SubBanner } from "../../components/SubBanner/SubBanner";
+import { SUBBANNER_IMG } from "../../../services";
 
 const Intervenciones = () => {
   return (
     <Layout>
-      <p>Intervenciones</p>
-      <Banner />
+      <SubBanner
+        nameSection="Intervenciones"
+        img={SUBBANNER_IMG[4].galeriaFoto}
+      />
     </Layout>
   );
 };
